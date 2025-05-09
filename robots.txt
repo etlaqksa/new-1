@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://etlaqksa.com/sitemap.xml
+# Assuming the final domain will be etlaqksa.com, user can change this if needed.

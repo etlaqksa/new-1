@@ -1,0 +1,371 @@
+/* General Styles */
+body {
+  font-family: 'Cairo', sans-serif; /* Use Cairo font */
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: #1e3a8a; /* Dark Blue */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15); /* MODIFIED */
+}
+
+header .logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#company-logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+header .logo-container h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header .logo-container p {
+  margin: 5px 0 0;
+  font-size: 1em;
+  opacity: 0.9;
+}
+
+header .tagline {
+  margin-top: 10px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Navigation */
+nav {
+  background-color: #3b82f6; /* Lighter Blue */
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover, nav a.active-nav {
+  background-color: #1e3a8a; /* Darker Blue on hover/active */
+  color: #e0e7ff;
+}
+
+/* Main Content Area */
+main {
+  padding-top: 20px;
+}
+
+/* Sections */
+section {
+  display: none; /* Hidden by default */
+  padding: 40px 20px; /* MODIFIED: Increased vertical padding, added horizontal for content within section */
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* MODIFIED */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+section.active {
+  display: block; /* Show active section */
+}
+
+section h2 {
+  color: #1e3a8a; /* Dark Blue */
+  border-bottom: 2px solid #3b82f6; /* Lighter Blue */
+  padding-bottom: 10px;
+  margin-bottom: 25px; /* Increased margin */
+  font-size: 1.9em; /* Slightly increased font size */
+}
+
+section h3 {
+  color: #1e40af; /* Slightly lighter dark blue */
+  margin-top: 30px; /* Increased margin */
+  margin-bottom: 15px; /* Increased margin */
+  font-size: 1.5em; /* Slightly increased font size */
+}
+
+section p {
+  margin-bottom: 18px; /* Increased margin */
+  font-size: 1.05em; /* Slightly increased for readability */
+}
+
+section ul {
+  list-style: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+section li {
+  margin-bottom: 12px; /* Increased margin */
+}
+
+/* Specific Section Styles */
+#services .service-item {
+  background-color: #eef2ff; /* Very Light Blue */
+  padding: 25px; /* Increased padding */
+  margin-bottom: 25px; /* Increased margin */
+  border-radius: 8px;
+  border-left: 5px solid #3b82f6; /* Lighter Blue */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* ADDED */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* ADDED for hover effect */
+}
+
+#services .service-item:hover { /* ADDED */
+  transform: translateY(-3px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+
+#projects ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#projects li {
+  background-color: #f3f4f6; /* Light Gray */
+  padding: 12px 18px; /* Increased padding */
+  margin-bottom: 10px; /* Increased margin */
+  border-radius: 6px; /* Slightly adjusted radius */
+  transition: background-color 0.3s ease; /* ADDED for hover effect */
+}
+
+#projects li:hover { /* ADDED */
+  background-color: #e9ecef; /* Slightly darker on hover */
+}
+
+
+#machinery table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px; /* Increased margin */
+}
+
+#machinery th, #machinery td {
+  border: 1px solid #d1d5db; /* Gray border */
+  padding: 14px; /* Increased padding */
+  text-align: right;
+}
+
+#machinery th {
+  background-color: #e5e7eb; /* Lighter Gray */
+  color: #1f2937;
+  font-weight: bold;
+  font-size: 1.1em; /* Slightly increased */
+}
+
+#machinery tbody tr:nth-child(even) {
+  background-color: #f9fafb; /* Alternate row color */
+}
+#machinery tbody tr:hover { /* ADDED */
+  background-color: #f0f2f5;
+}
+
+#contact .contact-details {
+  background-color: #eef2ff; /* Very Light Blue */
+  padding: 25px; /* Increased padding */
+  border-radius: 8px;
+  line-height: 2.2; /* Increased line height */
+}
+
+#contact .contact-details p {
+  margin-bottom: 12px; /* Increased margin */
+}
+
+#contact .contact-details a {
+  color: #1e3a8a; /* Dark Blue */
+  text-decoration: none;
+  font-weight: 500; /* ADDED for emphasis */
+  transition: color 0.3s;
+}
+
+#contact .contact-details a:hover {
+  color: #3b82f6; /* Lighter Blue */
+  text-decoration: underline; /* ADDED for better affordance */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px 0; /* Increased padding */
+  background-color: #1e3a8a; /* Dark Blue */
+  color: white;
+  margin-top: 40px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav .container {
+    justify-content: space-around;
+  }
+  nav a {
+    padding: 8px 10px;
+    margin: 3px;
+    font-size: 0.9em;
+  }
+  section h2 {
+    font-size: 1.7em; /* Adjusted */
+  }
+  section h3 {
+    font-size: 1.4em; /* Adjusted */
+  }
+  section p {
+    font-size: 1em; /* Adjusted */
+  }
+  #company-logo {
+    max-width: 180px; /* Adjusted for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo-container h1 {
+    font-size: 1.5em; /* Adjusted */
+  }
+  nav a {
+    font-size: 0.75em; /* Adjusted */
+    padding: 6px 8px;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  section {
+    padding: 30px 15px; /* Adjusted padding for smaller screens */
+  }
+  #company-logo {
+    max-width: 150px; /* Adjusted for smaller screens */
+  }
+  section h2 {
+    font-size: 1.5em;
+  }
+  section h3 {
+    font-size: 1.25em;
+  }
+}
+
+/* Photo Gallery Styles */
+#gallery .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Increased gap */
+  margin-top: 25px; /* Increased margin */
+}
+
+#gallery .gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery .gallery-item img {
+  display: block;
+  width: 100%;
+  height: 220px; /* Increased height for consistency */
+  object-fit: cover; /* Cover the area, might crop */
+  transition: transform 0.3s ease;
+}
+
+#gallery .gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#gallery .gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Styles for industry-info page elements if they are merged and need specific styling */
+.industry-section { /* This was in industry-info.html, will be relevant after merge */
+  margin-bottom: 30px;
+  background-color: #ffffff; /* Already similar to section, ensure consistency */
+  border-radius: 8px;
+  padding: 25px; /* Increased padding */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Consistent with section shadow */
+}
+
+.industry-section h2 { /* Ensure consistency with main section h2 */
+  color: #1e3a8a;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.7em; 
+}
+.industry-section h3 { /* Ensure consistency with main section h3 */
+    color: #1e40af;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.back-button { /* This was in industry-info.html, will be removed after merge */
+  display: inline-block;
+  margin: 20px 0;
+  padding: 12px 20px; /* Increased padding */
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.back-button:hover {
+  background-color: #1e3a8a;
+}
+
+/* Ensure WhatsApp button is not obscured and has good contrast */
+#whatsapp-button {
+  position: fixed;
+  bottom: 25px; /* Increased slightly */
+  right: 25px; /* Increased slightly */
+  z-index: 1000;
+}
+#whatsapp-button img {
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Enhanced shadow */
+  transition: transform 0.2s ease-in-out; /* Added hover effect */
+}
+#whatsapp-button:hover img { /* Added hover effect */
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,56 @@
+<section aria-labelledby="nav-tab-contact" id="contact" role="tabpanel">
+    <h2 data-translate="contactTitle">تواصل معنا</h2>
+    <p data-translate="contactIntro">إذا كنت بحاجة إلى خدماتنا أو لديك أي استفسارات، فلا تتردد في التواصل معنا عبر النموذج أدناه أو باستخدام معلومات الاتصال المباشرة.</p>
+    
+    <div class="contact-container">
+        <div class="contact-form-container">
+            <h3 data-translate="contactFormTitle">نموذج الاتصال</h3>
+            <form id="contactForm" action="#" method="post">
+                <div>
+                    <label for="name" data-translate="contactFormNameLabel">الاسم:</label>
+                    <input type="text" id="name" name="name" required placeholder="ادخل اسمك" data-translate-placeholder="contactFormNamePlaceholder">
+                </div>
+                <div>
+                    <label for="email" data-translate="contactFormEmailLabel">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required placeholder="ادخل بريدك الإلكتروني" data-translate-placeholder="contactFormEmailPlaceholder">
+                </div>
+                <div>
+                    <label for="phone" data-translate="contactFormPhoneLabel">رقم الهاتف (اختياري):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="ادخل رقم هاتفك" data-translate-placeholder="contactFormPhonePlaceholder">
+                </div>
+                <div>
+                    <label for="subject" data-translate="contactFormSubjectLabel">الموضوع:</label>
+                    <input type="text" id="subject" name="subject" required placeholder="ادخل موضوع الرسالة" data-translate-placeholder="contactFormSubjectPlaceholder">
+                </div>
+                <div>
+                    <label for="message" data-translate="contactFormMessageLabel">الرسالة:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="اكتب رسالتك هنا" data-translate-placeholder="contactFormMessagePlaceholder"></textarea>
+                </div>
+                <button type="submit" data-translate="contactFormSubmitButton">إرسال الرسالة</button>
+            </form>
+            <p id="formSubmissionStatus"></p>
+        </div>
+        
+        <div class="contact-details-container">
+            <h3 data-translate="contactDirectTitle">معلومات الاتصال المباشر</h3>
+            <p><strong data-translate="contactPhoneLabel">الهاتف:</strong> <a href="tel:+966534145922">+966 53 414 5922</a></p>
+            <p><strong data-translate="contactEmailLabel">البريد الإلكتروني:</strong> <a href="mailto:info@etlaqksa.com">info@etlaqksa.com</a></p>
+            <p><strong data-translate="contactAddressLabel">العنوان:</strong> <span data-translate="contactAddressText">الرياض، المملكة العربية السعودية (الموقع الرئيسي - يرجى تحديد العنوان الدقيق)</span></p>
+            
+            <h4 data-translate="contactSocialMediaTitle">تابعنا على:</h4>
+            <div class="social-media-links">
+                <a href="#" target="_blank" aria-label="Facebook" data-translate-aria-label="facebookAriaLabel"><img src="images/social/facebook_icon.png" alt="Facebook"></a>
+                <a href="#" target="_blank" aria-label="Twitter" data-translate-aria-label="twitterAriaLabel"><img src="images/social/twitter_icon.png" alt="Twitter"></a>
+                <a href="#" target="_blank" aria-label="LinkedIn" data-translate-aria-label="linkedinAriaLabel"><img src="images/social/linkedin_icon.png" alt="LinkedIn"></a>
+                <a href="https://wa.me/966534145922" target="_blank" aria-label="WhatsApp" data-translate-aria-label="whatsappAriaLabel"><img src="images/social/whatsapp_icon.png" alt="WhatsApp"></a>
+                <!-- Add more social media icons as needed -->
+            </div>
+        </div>
+    </div>
+
+    <div id="map-container">
+        <h3 data-translate="contactMapTitle">موقعنا على الخريطة</h3>
+        <!-- Replace with actual Google Maps embed code -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.072834883078!2d46.67529521500074!3d24.72415748411938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038d76c79a41%3A0x91d79a4975ab5778!2sRiyadh!5e0!3m2!1sen!2ssa!4v1678886400000!5m2!1sen!2ssa" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps - Riyadh" data-translate-title="googleMapsTitle"></iframe>
+    </div>
+</section>
