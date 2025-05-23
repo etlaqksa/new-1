@@ -69,7 +69,7 @@ body {
 </style>
 <nav>
 <div class="container">
-<a aria-selected="false" class="active-nav" data-translate="navHome" href="home" id="nav-tab-home" onclick="showTab('home', this)" role="tab">الرئيسية</a>
+<a aria-selected="false" class="active-nav" data-translate="navHome" href="#home" id="nav-tab-home" onclick="showTab('home', this)" role="tab">الرئيسية</a>
 <a aria-selected="false" data-translate="navAbout" href="#about" id="nav-tab-about" onclick="showTab('about', this)" role="tab">من نحن</a>
 <a aria-selected="false" data-translate="navServices" href="#services" id="nav-tab-services" onclick="showTab('services', this)" role="tab">خدماتنا</a>
 <a aria-selected="false" data-translate="navProjects" href="#projects" id="nav-tab-projects" onclick="showTab('projects', this)" role="tab">مشاريعنا</a>
@@ -496,7 +496,7 @@ body {
             showTab(hash, targetLink);
         } else {
             // Show the home tab by default if no hash or invalid hash
-            showTab('home', document.querySelector('nav a[href="home"]'));
+            showTab('home', document.querySelector('nav a[href="#home"]'));
         }
     });
 
@@ -507,7 +507,7 @@ body {
          if (hash && targetLink) {
             showTab(hash, targetLink);
         } else {
-             showTab('home', document.querySelector('nav a[href="home"]'));
+             showTab('home', document.querySelector('nav a[href="#home"]'));
         }
     });
   </script>
